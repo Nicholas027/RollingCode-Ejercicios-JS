@@ -1,24 +1,29 @@
-// Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje de “número erróneo”.
-// Si el número ingresado no es válido mostrar el mensaje “Introduce un número válido”.
+// 3- Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse 
+// todas las cadenas concatenadas con un guión -.
 
-// Ejemplo:
+// Nota: usar confirm()
 
-// Input: 5                      Output: Suficiente
-// Input: 50                     Output: Número erróneo
-// Input: hola10                 Output: Introduce un número válido
-
-// let numero;
+// let stringsConcatenados = "";
+// let string;
 
 // while (true) {
-//   numero = parseInt(prompt("Ingrese un numero"));
-//   if (isNaN(numero)) { //pero si introduce "10hola" imprime suficiente o erroneo si el primer numero no es del rango 🤔
-//     alert("Introduce un numero valido");
-//     break;
-//   } else if (numero < 0 || numero > 10) {
-//     alert("Numero erroneo");
-//     break;
-//   } else {
-//     alert("Suficiente");
-//     break;
+//     string = prompt("Ingrese una cadena de texto (o presione Cancelar para detenerse):");
+
+//   if (string === null) {
+//     let continuar = confirm("¿Desea continuar ingresando cadenas?");
+//     if (!continuar) {
+//       break;
+//     }
 //   }
+
+//   if (string !== null) {
+//     stringsConcatenados += string + " - ";
+//   }
+// }
+
+// if (stringsConcatenados) {
+//   stringsConcatenados = stringsConcatenados.substring(0, stringsConcatenados.length - 3);
+//   console.log("Cadenas concatenadas: " + stringsConcatenados);
+// } else {
+//   console.log("No se ingresaron cadenas.");
 // }
